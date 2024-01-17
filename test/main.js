@@ -10,9 +10,9 @@ let bird_props = bird.getBoundingClientRect();
 // This method returns DOMReact -> top, right, bottom, left, x, y, width and height
 let background = document.querySelector('.background').getBoundingClientRect();
 
-let score_val = document.querySelector('.score-val');
+let score_val = document.querySelector('.score_val');
 let message = document.querySelector('.message');
-let score_title = document.querySelector('.score-title');
+let score_title = document.querySelector('.score_title');
 
 let game_state = 'Start';
 img.style.display = 'none';
