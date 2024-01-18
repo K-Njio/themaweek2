@@ -100,16 +100,15 @@ gameDisplay.appendChild(obstacle)
 obstacle.style.left = obstacleLeft +'px'
 obstacle.style.bottom= obatakelBottom + 250 +'px'
 
-}
-
-
 function moveObstackle(){
   obstacleLeft -=2
 
 }
- let timerObstackle= setInterval(moveObstackle,2)
+ let timerObstackle= setInterval(moveObstackle,20)
+}
 
 obstacleGenerator()
+
 
 
 
