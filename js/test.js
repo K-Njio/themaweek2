@@ -87,7 +87,7 @@ document.addEventListener('keydown', function(event) {
 
 function obstacleGenerator(){
   let obstacleLeft= 500 
-  let randomHeight=Math.random()*150
+  let randomHeight=Math.random()*125
   //zpdat de obstakel boven de grond is.
   let obatakelBottom= randomHeight
     //je maakt een div
@@ -101,10 +101,10 @@ obstacle.style.left = obstacleLeft +'px'
 obstacle.style.bottom= obatakelBottom + 250 +'px'
 
 function moveObstackle(){
-  obstacleLeft -=2
-
+  obatakelBottom -=2
+//  obstacleLeft.style.left=obstacleLeft
 }
- let timerObstackle= setInterval(moveObstackle,20)
+ let timerid= setInterval(moveObstackle,20)
 }
 
 obstacleGenerator()
