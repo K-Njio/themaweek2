@@ -86,18 +86,30 @@ document.addEventListener('keydown', function(event) {
 
 
 function obstacleGenerator(){
+  let obstacleLeft= 500 
+  let randomHeight=Math.random()*150
+  //zpdat de obstakel boven de grond is.
+  let obatakelBottom= randomHeight
     //je maakt een div
+ 
 const obstacle= document.createElement('div')
 obstacle.classList.add('obstacle')
 // //laat het gemaakte obatakel erdoorheen komen?
 // //het wordt in een div geplaatst in de game-container
 gameDisplay.appendChild(obstacle)
+obstacle.style.left = obstacleLeft +'px'
+obstacle.style.bottom= obatakelBottom + 250 +'px'
 
 }
+
+
+function moveObstackle(){
+  obstacleLeft -=2
+
+}
+ let timerObstackle= setInterval(moveObstackle,2)
+
 obstacleGenerator()
-
-
-
 
 
 
