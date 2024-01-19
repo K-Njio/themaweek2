@@ -6,25 +6,46 @@
 
 body {
     display: flex;
-}
-
+  }
+  
 .game-container {
     width: 500px;
     height: 700px;
     position: absolute;
-    left:60px;
+    left: 80px;
     top: 45px;
 }
 
-.left-border{
-    width: 60px;
+.left-border {
+    width: 80px;
     height: 775px;
-    background-color: green;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    z-index: 3;
+}
+
+.right-border {
+    width: 80px;
+    height: 775px;
+    background-color: white;
+    position: absolute;
+    left: 700px;
     z-index: 2;
 }
+
+.top-border {
+    width: 700px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: -80px;
+    z-index: 2;
+}
+
 .sky {
     background-image: url(/img/mountain.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 700px;
     height: 580px;
@@ -32,7 +53,7 @@ body {
 }
 
 .ground {
-    background-color: brown;
+    background-image: url(/img/lava-halftone-modern-design-backdrop-hot-red-vector-37195181.jpg);
     width: 700px;
     height: 150px;
     position: absolute;

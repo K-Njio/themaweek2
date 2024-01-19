@@ -60,10 +60,10 @@ function generateObstacle() {
         obstacle.style.left = obstacleLeft + "px"
         topObstacle.style.left = obstacleLeft + "px"
 
-        if (obstacleLeft === -60) {
-       
-            gameDisplay.classList.remove("obstacle")
-            gameDisplay.classList.remove("top-obstacle")
+        if (obstacleLeft === 0) {
+            clearInterval(timerObstacle)
+            gameDisplay.removeChild(obstacle)
+            gameDisplay.removeChild(topObstacle)
         }
 //waar de vogel de paal aanraakt gaat ie af.
         if (
@@ -81,6 +81,7 @@ function generateObstacle() {
 }
 
 generateObstacle() 
+
 
 function gameOver() {
     clearInterval(timerGame)
