@@ -9,7 +9,7 @@ let birdLeft = 220
 let birdBottom = 100
 let gravity = 2
 let gameIsOver= false
-
+let gap=400
 function startGame() {
     birdBottom -= gravity
     bird.style.bottom = birdBottom + 'px'
@@ -42,7 +42,7 @@ function generateObstacle() {
     let obstacleBottom = randomHeight
 
     const obstacle = document.createElement("div")
-    obstacle.classList.add("obstacle")
+  if(!gameIsOver)obstacle.classList.add("obstacle")  
     gameDisplay.appendChild(obstacle)
     obstacle.style.left = obstacleLeft + "px"
     obstacle.style.bottom = obstacleBottom + "px"
@@ -55,13 +55,18 @@ function generateObstacle() {
             obstacle.classList.remove("obstacle")
         }
 
-        if (birdBottom === 0) {
+        if (
+            obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
+            (birdBottom < obstacleBottom + 150 || birdBottom > obstacleBottom + gap -200)||
+            birdBottom === 0 
+            ) {
             gameOver()
+            clearInterval(timerObstacle)
         }
     }
 
     let timerObstacle = setInterval(moveObstacle, 20)
-    setTimeout(generateObstacle, 2500)
+    if(!gameIsOver){setTimeout(generateObstacle, 2500)}
 }
 
 generateObstacle() 
