@@ -10,6 +10,7 @@ let birdBottom = 100
 let gravity = 2
 let gameIsOver= false
 let gap=450
+
 function startGame() {
     birdBottom -= gravity
     bird.style.bottom = birdBottom + 'px'
@@ -60,7 +61,7 @@ function generateObstacle() {
         topObstacle.style.left = obstacleLeft + "px"
 
         if (obstacleLeft === -60) {
-            obstacle.classList.remove("obstacle")
+       
             gameDisplay.removeChild("obstacle")
         }
 
