@@ -9,7 +9,7 @@ let birdLeft = 220
 let birdBottom = 100
 let gravity = 2
 let gameIsOver= false
-let gap=450
+let gap=460
 
 function startGame() {
     birdBottom -= gravity
@@ -46,7 +46,7 @@ function generateObstacle() {
     const topObstacle = document.createElement("div")
   if(!gameIsOver){
     obstacle.classList.add("obstacle")  
-    topObstacle.classList.add("obstacle")  
+    topObstacle.classList.add("top-obstacle")  
 }
     gameDisplay.appendChild(obstacle)
     gameDisplay.appendChild(topObstacle)
@@ -63,11 +63,12 @@ function generateObstacle() {
         if (obstacleLeft === -60) {
        
             gameDisplay.removeChild("obstacle")
+            gameDisplay.removeChild("top-obstacle")
         }
-
+//waar de vogel de paal aanraakt gaat ie af.
         if (
-            obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
-             (birdBottom < obstacleBottom + 150 || birdBottom > obstacleBottom + gap -200)||
+            obstacleLeft > 200 && obstacleLeft < 274 && birdLeft === 220 &&
+             (birdBottom < obstacleBottom + 147 || birdBottom > obstacleBottom + gap -230)||
             birdBottom === 0 
             ) {
             gameOver()
