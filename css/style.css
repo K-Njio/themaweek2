@@ -12,7 +12,7 @@ body {
     width: 500px;
     height: 700px;
     position: absolute;
-    left: 80px;
+    left: 480px;
     top: 45px;
 }
 
@@ -21,7 +21,7 @@ body {
     height: 775px;
     background-color: white;
     position: absolute;
-    left: 80px;
+    left: 480px;
     z-index: 3;
 }
 
@@ -30,7 +30,7 @@ body {
     height: 775px;
     background-color: white;
     position: absolute;
-    left: 700px;
+    left: 1200px;
     z-index: 2;
 }
 
