@@ -57,7 +57,7 @@ function generateObstacle() {
 
         if (
             obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
-            (birdBottom < obstacleBottom + 150 || birdBottom > obstacleBottom + gap -200)||
+             (birdBottom < obstacleBottom + 150 && birdBottom > obstacleBottom + gap -200)||
             birdBottom === 0 
             ) {
             gameOver()
@@ -66,7 +66,7 @@ function generateObstacle() {
     }
 
     let timerObstacle = setInterval(moveObstacle, 20)
-    if(!gameIsOver){setTimeout(generateObstacle, 2500)}
+    if(!gameIsOver){setTimeout(generateObstacle, 3000)}
 }
 
 generateObstacle() 
