@@ -4,17 +4,24 @@
     padding: 0%;
 }
 
-/* body {
+body {
     display: flex;
-} */
+}
 
 .game-container {
     width: 500px;
-    height: 730px;
+    height: 700px;
     position: absolute;
+    left:60px;
+    top: 45px;
 }
 
-
+.left-border{
+    width: 60px;
+    height: 775px;
+    background-color: green;
+    z-index: 2;
+}
 .sky {
     background-image: url(mountain.jpg);
     background-repeat:no-repeat;

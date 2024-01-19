@@ -62,13 +62,13 @@ function generateObstacle() {
 
         if (obstacleLeft === -60) {
        
-            gameDisplay.removeChild("obstacle")
-            gameDisplay.removeChild("top-obstacle")
+            gameDisplay.classList.remove("obstacle")
+            gameDisplay.classList.remove("top-obstacle")
         }
 //waar de vogel de paal aanraakt gaat ie af.
         if (
             obstacleLeft > 200 && obstacleLeft < 274 && birdLeft === 220 &&
-             (birdBottom < obstacleBottom + 147 || birdBottom > obstacleBottom + gap -230)||
+             (birdBottom < obstacleBottom + 178 || birdBottom > obstacleBottom + gap -205)||
             birdBottom === 0 
             ) {
             gameOver()
