@@ -23,7 +23,7 @@ body {
     z-index: 2;
 }
 .sky {
-    background-image: url(mountain.jpg);
+    background-image: url(/img/mountain.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     width: 700px;
@@ -41,7 +41,7 @@ body {
 }
 
 .bird {
-    background-image: url(luci.png);
+    background-image: url(/img/luci.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -51,7 +51,7 @@ body {
 }
 
 .obstacle {
-    background-image: url(tube_red2-removebg-preview.png);
+    background-image: url(/img/tube_red2-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 80px;
@@ -60,7 +60,7 @@ body {
 }
 
 .top-obstacle {
-    background-image: url(tube_red2-removebg-preview.png);
+    background-image: url(/img/tube_red2-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(180deg);
