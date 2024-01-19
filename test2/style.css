@@ -40,16 +40,19 @@
 }
 
 .obstacle{
-    background-color: red;
-    width: 60px;
+    background-image: url(tube_red2-removebg-preview.png);
+    background-repeat: no-repeat;
+    width: 80px;
     height: 300px;
     position: absolute;
 }
 
-.obstacle{
-    background-color: maroon;
-    transform: rotate(180deg);
-    width: 60px;
+.top-obstacle{
+    background-image: url(tube_red2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* rotate: (180deg); */
+    width: 80px;
     height: 300px;
     position: absolute;
 }
