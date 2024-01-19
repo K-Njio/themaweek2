@@ -45,3 +45,11 @@
     height: 300px;
     position: absolute;
 }
+
+.obstacle{
+    background-color: maroon;
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
